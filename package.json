@@ -1,0 +1,17 @@
+{
+  "name": "gb-industrial-medical-gases",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Professional B2B website foundation for GB Industrial & Medical Gases.",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "@tailwindcss/vite": "^4.1.17",
+    "tailwindcss": "^4.1.17",
+    "vite": "^7.1.7"
+  }
+}

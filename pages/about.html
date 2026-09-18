@@ -1,0 +1,814 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/png" href="../assets/icons/logo.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="About GB Industrial & Medical Gases — Learn our story, founder background, mission, values, and dedication to safety and quality in industrial and medical gas solutions." />
+  <title>About Us | GB Industrial &amp; Medical Gases</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="../css/input.css" />
+
+  <style>
+    body { font-family: 'Inter', 'Plus Jakarta Sans', sans-serif; }
+    h1, h2, h3, h4, h5 { font-family: 'Plus Jakarta Sans', 'Inter', sans-serif; }
+
+    .hero-bg {
+      background: #040d1e;
+      position: relative;
+    }
+    .hero-bg::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background:
+        radial-gradient(ellipse 60% 70% at 75% 45%, rgba(30,58,138,0.32) 0%, transparent 70%),
+        radial-gradient(ellipse 40% 50% at 20% 80%, rgba(6,182,212,0.08) 0%, transparent 60%);
+      pointer-events: none;
+    }
+
+    .cta-section {
+      background: linear-gradient(100deg, #0f2044 0%, #1e3a8a 60%, #1d4ed8 100%);
+    }
+
+    .site-footer { background: #030b18; }
+
+  </style>
+</head>
+
+<body class="bg-white text-slate-800 antialiased">
+
+<!--
+  ═══════════════════════════════════════════════════════════
+  1. NAVBAR
+  ═══════════════════════════════════════════════════════════
+-->
+<header id="site-nav" class="fixed top-0 inset-x-0 z-50 bg-[#040d1e]">
+  <div class="max-w-screen-xl mx-auto px-5 sm:px-8">
+
+    <!-- Desktop row -->
+    <div class="flex items-center justify-between h-[66px]">
+
+      <!-- Logo -->
+      <a href="../index.html" class="flex-shrink-0 group flex items-center gap-3" aria-label="GB Industrial & Medical Gases — Home">
+        <div class="bg-white rounded-lg p-1 flex items-center justify-center flex-shrink-0 transition-transform duration-200 group-hover:scale-105" style="width:44px;height:44px;">
+          <img
+            src="../assets/icons/logo.png"
+            alt="GB Industrial & Medical Gases logo"
+            class="w-full h-full object-contain"
+          />
+        </div>
+        <div class="flex flex-col leading-none hidden sm:flex">
+          <span class="text-white font-extrabold text-[0.9375rem] tracking-tight leading-none">GB Industrial</span>
+          <span class="text-slate-400 text-[0.625rem] font-semibold uppercase tracking-[0.12em] mt-0.5 leading-none">&amp; Medical Gases</span>
+        </div>
+      </a>
+
+      <!-- Desktop nav links -->
+      <nav class="hidden lg:flex items-center gap-7 xl:gap-8" aria-label="Primary navigation">
+        <a href="../index.html" class="nav-link">Home</a>
+        <a href="./about.html" class="nav-link text-white font-semibold after:!w-full after:!bg-sky-400">About</a>
+        <a href="./products.html" class="nav-link">Products</a>
+        <a href="./contact.html" class="nav-link">Contact</a>
+      </nav>
+
+      <!-- Right: CTA + hamburger -->
+      <div class="flex items-center gap-3">
+        <a href="./contact.html" class="hidden md:inline-flex btn-primary py-2 px-4 text-xs">
+          Request a Quote
+        </a>
+        <button
+          id="nav-toggler"
+          class="lg:hidden w-9 h-9 flex items-center justify-center rounded text-slate-300 hover:text-white hover:bg-white/10 transition-colors"
+          aria-label="Open navigation"
+          aria-expanded="false"
+          aria-controls="mobile-nav">
+          <svg id="icon-open" class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/>
+          </svg>
+          <svg id="icon-close" class="w-5 h-5 hidden" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile menu -->
+    <div id="mobile-nav" class="lg:hidden border-t border-white/10">
+      <nav class="py-3 flex flex-col gap-0.5" aria-label="Mobile navigation">
+        <a href="../index.html"    class="px-3 py-2.5 text-sm font-medium text-slate-300 hover:text-white hover:bg-white/[0.05] rounded transition-colors">Home</a>
+        <a href="./about.html"     class="px-3 py-2.5 text-sm font-semibold text-white bg-white/[0.08] rounded">About</a>
+        <a href="./products.html"  class="px-3 py-2.5 text-sm font-medium text-slate-300 hover:text-white hover:bg-white/[0.05] rounded transition-colors">Products</a>
+        <a href="./contact.html"   class="px-3 py-2.5 text-sm font-medium text-slate-300 hover:text-white hover:bg-white/[0.05] rounded transition-colors">Contact</a>
+        <div class="pt-2 pb-1">
+          <a href="./contact.html" class="btn-primary w-full justify-center text-sm py-2.5">Request a Quote</a>
+        </div>
+      </nav>
+    </div>
+
+  </div>
+</header>
+
+<main>
+
+<!--
+  ═══════════════════════════════════════════════════════════
+  2. ABOUT HERO
+  ═══════════════════════════════════════════════════════════
+-->
+<section class="hero-bg pt-[110px] pb-16 lg:pb-24 overflow-hidden border-b border-white/10">
+  <div class="absolute inset-0 grid-pattern opacity-100 pointer-events-none"></div>
+
+  <div class="relative z-10 max-w-screen-xl mx-auto px-5 sm:px-8">
+    <div class="max-w-3xl">
+
+      <!-- Breadcrumb -->
+      <nav class="reveal flex items-center gap-2 text-xs font-medium text-slate-400 mb-6" aria-label="Breadcrumb">
+        <a href="../index.html" class="hover:text-sky-300 transition-colors">Home</a>
+        <span class="text-slate-600">/</span>
+        <span class="text-sky-400 font-semibold">About Us</span>
+      </nav>
+
+      <!-- Label -->
+      <div class="reveal reveal-delay-1 mb-4">
+        <span class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full border border-sky-500/25 bg-sky-500/[0.07] text-sky-300 text-[0.7rem] font-bold uppercase tracking-[0.14em]">
+          <span class="w-1.5 h-1.5 rounded-full bg-sky-400 animate-pulse"></span>
+          About GB Industrial &amp; Medical Gases
+        </span>
+      </div>
+
+      <!-- Heading -->
+      <h1 class="reveal reveal-delay-2 text-3xl sm:text-5xl lg:text-[3.25rem] font-extrabold text-white leading-[1.12] tracking-tight mb-6">
+        Built on Trust.<br/>
+        Driven by Quality.
+      </h1>
+
+      <!-- Supporting text -->
+      <p class="reveal reveal-delay-3 text-base sm:text-lg text-slate-300 leading-relaxed max-w-2xl">
+        GB Industrial &amp; Medical Gases is committed to providing dependable gas solutions with a strong focus on quality, safety, and customer satisfaction.
+      </p>
+
+    </div>
+  </div>
+</section>
+
+
+<!--
+  ═══════════════════════════════════════════════════════════
+  3. COMPANY INTRODUCTION (WHO WE ARE)
+  ═══════════════════════════════════════════════════════════
+-->
+<section class="py-20 lg:py-28 bg-white">
+  <div class="max-w-screen-xl mx-auto px-5 sm:px-8">
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+
+      <!-- Left: Large company / facility image -->
+      <div class="reveal lg:col-span-5 relative">
+        <div class="img-zoom rounded-lg overflow-hidden shadow-2xl aspect-[4/3] bg-[#0f1f3d] flex items-center justify-center border border-slate-200">
+          <img
+            src="../assets/images/hero/facility.jpg"
+            alt="GB Industrial & Medical Gases facility and operations"
+            class="w-full h-full object-cover"
+            onerror="this.style.display='none';this.nextElementSibling.style.display='flex';"
+          />
+          <!-- Fallback placeholder -->
+          <div class="hidden w-full h-full flex-col items-center justify-center gap-3 p-8 text-center bg-[#0d1b33]" style="display:flex;">
+            <div class="w-16 h-16 rounded-full bg-blue-900/40 flex items-center justify-center border border-blue-700/40">
+              <svg class="w-8 h-8 text-sky-400" fill="none" stroke="currentColor" stroke-width="1.6" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/>
+              </svg>
+            </div>
+            <p class="text-slate-300 text-sm font-semibold">[ Facility &amp; Operations Photo ]</p>
+            <p class="text-xs text-slate-400">Gas storage, cylinders, and distribution infrastructure</p>
+          </div>
+        </div>
+
+        <!-- Visual accent badge -->
+        <div class="absolute -bottom-5 -right-3 sm:-right-5 bg-white border border-slate-200 rounded-lg p-4 shadow-lg flex items-center gap-3">
+          <div class="w-10 h-10 rounded bg-blue-50 flex items-center justify-center text-blue-900 flex-shrink-0">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
+            </svg>
+          </div>
+          <div>
+            <div class="text-[0.6875rem] uppercase font-bold tracking-wider text-slate-400">Commitment</div>
+            <div class="text-sm font-extrabold text-slate-900">Safety &amp; Purity First</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right: Detailed Introduction -->
+      <div class="reveal reveal-delay-2 lg:col-span-7">
+        <span class="section-label">Who We Are</span>
+        <h2 class="text-3xl sm:text-[2.25rem] font-extrabold text-slate-900 leading-tight mb-4">
+          About GB Industrial &amp; Medical Gases
+        </h2>
+        <div class="h-accent"></div>
+
+        <div class="space-y-4 text-slate-600 leading-relaxed text-[0.9375rem]">
+          <p>
+            <strong>GB Industrial &amp; Medical Gases</strong> is an established supplier of comprehensive gas solutions, serving industrial fabricators, manufacturing operations, laboratories, hospitals, clinics, and critical healthcare organizations. We bridge the vital gap between production and application through consistent, reliable gas distribution.
+          </p>
+          <p>
+            Our core activities encompass the supply, handling, and distribution of industrial gases, medical-grade gases, specialty gases, and essential cylinder equipment. With structured supply schedules and stringent quality assessments, we ensure our clients receive prompt refills and dependable availability to keep essential machinery and clinical systems running without interruption.
+          </p>
+          <p>
+            Safety and regulatory discipline form the cornerstone of our operations. From high-pressure cylinder testing and segregation to secure loading and compliant transportation, every stage is conducted under strict safety protocols.
+          </p>
+          <p>
+            Our business philosophy is anchored in long-term relationships, transparency, and personal responsiveness. We treat every client's supply continuity as our direct responsibility, tailoring our delivery agreements to align with operational workflows and emergency needs.
+          </p>
+        </div>
+
+        <!-- Information note -->
+        <div class="mt-6 p-3.5 bg-slate-50 border border-slate-200 rounded-md text-xs text-slate-500">
+          <span class="font-semibold text-slate-700">Company Record:</span> <span class="text-slate-600">[Official registration details, facility locations, and regional distribution nodes can be updated as verified.]</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+
+
+<!--
+  ═══════════════════════════════════════════════════════════
+  5. WHY WE STARTED
+  ═══════════════════════════════════════════════════════════
+-->
+<section class="py-20 lg:py-28 bg-white">
+  <div class="max-w-screen-xl mx-auto px-5 sm:px-8">
+    <div class="max-w-4xl mx-auto">
+
+      <div class="text-center mb-12">
+        <span class="section-label reveal">Our Purpose</span>
+        <h2 class="reveal reveal-delay-1 text-3xl sm:text-[2.25rem] font-extrabold text-slate-900 leading-tight">
+          Why GB Industrial &amp; Medical Gases Was Started
+        </h2>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+
+        <!-- Card 1: The Opportunity & Problem -->
+        <div class="reveal card-hover bg-slate-50 border border-slate-200 rounded-lg p-7">
+          <div class="w-10 h-10 rounded bg-blue-100/70 text-blue-900 flex items-center justify-center mb-4">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+            </svg>
+          </div>
+          <h3 class="text-lg font-bold text-slate-900 mb-2">The Unmet Need</h3>
+          <p class="text-slate-600 text-sm leading-relaxed">
+            In industrial manufacturing and healthcare operations, gas availability is critical. A delay in delivery or a drop in gas quality brings fabrication to an immediate standstill and jeopardizes healthcare procedures. The business was founded after observing frequent supply disruptions, unpredictable delivery timelines, and lack of customer-centered accountability in the market.
+          </p>
+        </div>
+
+        <!-- Card 2: The Solution & Difference -->
+        <div class="reveal reveal-delay-1 card-hover bg-slate-50 border border-slate-200 rounded-lg p-7">
+          <div class="w-10 h-10 rounded bg-emerald-100/70 text-emerald-900 flex items-center justify-center mb-4">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+            </svg>
+          </div>
+          <h3 class="text-lg font-bold text-slate-900 mb-2">Our Core Distinction</h3>
+          <p class="text-slate-600 text-sm leading-relaxed">
+            From day one, GB Industrial &amp; Medical Gases chose a different path: disciplined adherence to safety standards, rigorous cylinder maintenance, transparent communication, and rapid turnaround for urgent requirements. We set out to be partners who take ownership of the client's continuity.
+          </p>
+        </div>
+
+      </div>
+
+      <!-- Large Founder Statement / Quote Box -->
+      <div class="reveal reveal-delay-2 rounded-xl bg-gradient-to-br from-[#040d1e] to-[#0f2044] p-8 sm:p-12 text-white relative overflow-hidden border border-white/10 shadow-xl">
+        <div class="text-sky-400/20 text-7xl font-serif absolute -top-4 left-6 select-none pointer-events-none">“</div>
+        <div class="relative z-10 text-center max-w-2xl mx-auto">
+          <p class="text-lg sm:text-xl font-medium text-slate-200 italic leading-relaxed mb-6">
+            “[When we started GB Industrial &amp; Medical Gases, the goal was simple: ensure no hospital is left waiting for critical gases and no workshop has to halt production due to supply delays. Reliability and safety are non-negotiable.]”
+          </p>
+          <div class="text-xs uppercase tracking-widest text-sky-400 font-bold">
+            — Founder Statement on Founding Purpose
+          </div>
+          <p class="text-[0.7rem] text-slate-400 mt-1 italic">
+            (Replace placeholder quote with the founder's verified words)
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!--
+  ═══════════════════════════════════════════════════════════
+  5. ABOUT THE OWNER / FOUNDER
+  ═══════════════════════════════════════════════════════════
+-->
+<section class="py-20 lg:py-28 bg-[#f8fafc] border-t border-slate-200">
+  <div class="max-w-screen-xl mx-auto px-5 sm:px-8">
+
+    <div class="text-center max-w-xl mx-auto mb-14">
+      <span class="section-label reveal">Our Leadership</span>
+      <h2 class="reveal reveal-delay-1 text-3xl sm:text-[2.25rem] font-extrabold text-slate-900 leading-tight">
+        Meet the Founder
+      </h2>
+      <p class="reveal reveal-delay-2 text-slate-500 text-sm mt-3">
+        Guided by dedicated, hands-on leadership committed to industrial safety and reliable service.
+      </p>
+    </div>
+
+    <div class="max-w-4xl mx-auto bg-white border border-slate-200 rounded-xl overflow-hidden shadow-sm grid grid-cols-1 md:grid-cols-12">
+
+      <!-- Owner Photo Column -->
+      <div class="reveal md:col-span-5 bg-[#0f2044] flex flex-col items-center justify-center p-8 text-center relative min-h-[320px]">
+        <div class="w-36 h-36 rounded-full bg-white/10 border-2 border-sky-400/40 flex items-center justify-center overflow-hidden mb-4 shadow-inner">
+          <svg class="w-16 h-16 text-slate-400" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
+          </svg>
+        </div>
+        <div class="text-white font-extrabold text-lg">Naveen Kumar</div>
+        <div class="text-sky-400 text-xs font-semibold uppercase tracking-wider mt-1">Founder &amp; Owner</div>
+        <div class="text-slate-400 text-[0.7rem] mt-2 italic">[Portrait]</div>
+      </div>
+
+      <!-- Owner Bio Column -->
+      <div class="reveal reveal-delay-1 md:col-span-7 p-7 sm:p-9 flex flex-col justify-center">
+        <h3 class="text-2xl font-bold text-slate-900 mb-1">Naveen Kumar</h3>
+        <p class="text-sm font-semibold text-blue-800 mb-4">Founder &amp; Owner</p>
+        <div class="h-accent !mb-4"></div>
+
+        <div class="space-y-3 text-slate-600 text-sm leading-relaxed">
+          <p>
+            <strong>Leadership &amp; Operations:</strong><br/>
+            Naveen Kumar established GB Industrial &amp; Medical Gases with a clear commitment to bringing high standards of reliability and safety to the regional gas distribution sector. As Founder &amp; Owner, he actively oversees company operations, cylinder handling standards, quality control, and customer relationships.
+          </p>
+          <p>
+            <strong>Leadership Philosophy:</strong><br/>
+            A hands-on approach centered on direct customer accountability, strict adherence to safe storage protocols, and maintaining uninterrupted supply for vital operations across commercial and healthcare sectors.
+          </p>
+          <p>
+            <strong>Vision for the Company:</strong><br/>
+            Building an enduring, safety-first enterprise known for dependable partnerships, prompt service, and uncompromising standards in every cylinder delivered.
+          </p>
+        </div>
+
+        <div class="mt-6 pt-4 border-t border-slate-100 flex items-center gap-3">
+          <span class="text-xs text-slate-400">Direct Contact via Office:</span>
+          <a href="./contact.html" class="text-xs font-semibold text-blue-800 hover:text-blue-600 transition-colors">
+            Connect with our team &rarr;
+          </a>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+
+<!--
+  ═══════════════════════════════════════════════════════════
+  6. FOUNDER'S MESSAGE
+  ═══════════════════════════════════════════════════════════
+-->
+<section class="py-20 lg:py-24 bg-[#040d1e] relative overflow-hidden text-white">
+  <div class="absolute inset-0 grid-pattern opacity-50 pointer-events-none"></div>
+  <div class="absolute right-0 bottom-0 w-96 h-96 rounded-full bg-blue-600/10 blur-[90px] pointer-events-none"></div>
+
+  <div class="relative z-10 max-w-3xl mx-auto px-5 sm:px-8 text-center">
+    <span class="section-label-light reveal">Leadership Message</span>
+    <h2 class="reveal reveal-delay-1 text-3xl sm:text-4xl font-extrabold text-white leading-tight mb-8">
+      A Message from Our Founder
+    </h2>
+
+    <div class="reveal reveal-delay-2 bg-white/[0.04] border border-white/10 rounded-2xl p-8 sm:p-12 shadow-2xl relative">
+      <div class="text-sky-400/20 text-6xl font-serif leading-none absolute top-4 left-6 select-none">“</div>
+      <blockquote class="text-slate-200 text-base sm:text-lg leading-relaxed italic mb-8 relative z-10">
+        “At GB Industrial &amp; Medical Gases, we view our work not simply as delivering gas cylinders, but as safeguarding the operations of the businesses and hospitals that rely on us. Whether powering fabrication lines or supplying life-supporting medical gases, we hold ourselves accountable to the highest standards of safety, promptness, and integrity. We thank our customers for placing their trust in us and remain dedicated to earning that trust every single day.”
+      </blockquote>
+
+      <div class="pt-6 border-t border-white/10">
+        <div class="text-white font-bold text-base">Naveen Kumar</div>
+        <div class="text-sky-400 text-xs font-semibold tracking-wider uppercase mt-0.5">Founder &amp; Owner</div>
+        <div class="text-slate-400 text-xs mt-1">GB Industrial &amp; Medical Gases</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!--
+  ═══════════════════════════════════════════════════════════
+  8. OUR BUSINESS TODAY (WHAT WE DO TODAY)
+  ═══════════════════════════════════════════════════════════
+-->
+<section class="py-20 lg:py-28 bg-white">
+  <div class="max-w-screen-xl mx-auto px-5 sm:px-8">
+
+    <div class="text-center max-w-2xl mx-auto mb-14">
+      <span class="section-label reveal">Operations &amp; Capabilities</span>
+      <h2 class="reveal reveal-delay-1 text-3xl sm:text-[2.25rem] font-extrabold text-slate-900 leading-tight">
+        What We Do Today
+      </h2>
+      <p class="reveal reveal-delay-2 text-slate-500 text-sm mt-3">
+        Comprehensive gas supply infrastructure and customer-focused services tailored to modern enterprise requirements.
+      </p>
+    </div>
+
+    <!-- 4 Cards Grid -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+
+      <!-- 1. Industrial Gas Solutions -->
+      <div class="reveal card-hover bg-slate-50 border border-slate-200 rounded-lg p-6 flex flex-col">
+        <div class="w-11 h-11 rounded-md bg-blue-50 text-blue-900 flex items-center justify-center mb-4">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"/>
+          </svg>
+        </div>
+        <h3 class="font-bold text-slate-900 text-base mb-2">Industrial Gas Solutions</h3>
+        <p class="text-slate-600 text-xs leading-relaxed flex-1">
+          Dependable supply of essential industrial gases supporting fabrication, cutting, metal welding, and manufacturing workflows with consistent pressure and purity.
+        </p>
+        <a href="./products.html#industrial" class="link-arrow text-xs mt-4">
+          Explore Industrial Gases &rarr;
+        </a>
+      </div>
+
+      <!-- 2. Medical Gas Solutions -->
+      <div class="reveal reveal-delay-1 card-hover bg-slate-50 border border-slate-200 rounded-lg p-6 flex flex-col">
+        <div class="w-11 h-11 rounded-md bg-red-50 text-red-700 flex items-center justify-center mb-4">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/>
+          </svg>
+        </div>
+        <h3 class="font-bold text-slate-900 text-base mb-2">Medical Gas Solutions</h3>
+        <p class="text-slate-600 text-xs leading-relaxed flex-1">
+          Certified medical gas supply dedicated to hospitals, clinics, emergency centers, and healthcare providers, handled under rigorous health-grade protocols.
+        </p>
+        <a href="./products.html#medical" class="link-arrow text-xs mt-4">
+          Explore Medical Gases &rarr;
+        </a>
+      </div>
+
+      <!-- 3. Reliable Supply -->
+      <div class="reveal reveal-delay-2 card-hover bg-slate-50 border border-slate-200 rounded-lg p-6 flex flex-col">
+        <div class="w-11 h-11 rounded-md bg-sky-50 text-sky-700 flex items-center justify-center mb-4">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"/>
+          </svg>
+        </div>
+        <h3 class="font-bold text-slate-900 text-base mb-2">Reliable Supply &amp; Fleet</h3>
+        <p class="text-slate-600 text-xs leading-relaxed flex-1">
+          Equipped transport vehicles and systematic cylinder management ensure scheduled deliveries and swift turnaround to prevent downtime across client facilities.
+        </p>
+        <a href="./contact.html" class="link-arrow text-xs mt-4">
+          Inquire About Delivery &rarr;
+        </a>
+      </div>
+
+      <!-- 4. Customer Support -->
+      <div class="reveal reveal-delay-3 card-hover bg-slate-50 border border-slate-200 rounded-lg p-6 flex flex-col">
+        <div class="w-11 h-11 rounded-md bg-emerald-50 text-emerald-700 flex items-center justify-center mb-4">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192l-3.536 3.536M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-5 0a4 4 0 11-8 0 4 4 0 018 0z"/>
+          </svg>
+        </div>
+        <h3 class="font-bold text-slate-900 text-base mb-2">Customer Service</h3>
+        <p class="text-slate-600 text-xs leading-relaxed flex-1">
+          Direct, attentive communication for quotes, tailored supply contracts, emergency replenishment, and cylinder handling guidance.
+        </p>
+        <a href="./contact.html" class="link-arrow text-xs mt-4">
+          Contact Our Team &rarr;
+        </a>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+
+<!--
+  ═══════════════════════════════════════════════════════════
+  9. OUR VALUES (WHAT WE STAND FOR)
+  ═══════════════════════════════════════════════════════════
+-->
+<section class="py-20 lg:py-28 bg-[#f8fafc] border-t border-slate-200">
+  <div class="max-w-screen-xl mx-auto px-5 sm:px-8">
+
+    <div class="text-center max-w-2xl mx-auto mb-14">
+      <span class="section-label reveal">Guiding Principles</span>
+      <h2 class="reveal reveal-delay-1 text-3xl sm:text-[2.25rem] font-extrabold text-slate-900 leading-tight">
+        What We Stand For
+      </h2>
+      <p class="reveal reveal-delay-2 text-slate-500 text-sm mt-3">
+        Our core principles govern every operational procedure, cylinder inspection, and customer delivery.
+      </p>
+    </div>
+
+    <!-- 5 Values Cards -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-5">
+
+      <!-- Value 1: Quality -->
+      <div class="reveal card-hover bg-white border border-slate-200 rounded-lg p-6 flex flex-col">
+        <div class="w-10 h-10 rounded bg-blue-50 text-blue-900 flex items-center justify-center mb-4">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138z"/>
+          </svg>
+        </div>
+        <h3 class="font-bold text-slate-900 text-base mb-2">Quality</h3>
+        <p class="text-slate-600 text-xs leading-relaxed">
+          We are committed to maintaining consistent product quality and exact purity specifications across every cylinder refilled and dispatched.
+        </p>
+      </div>
+
+      <!-- Value 2: Safety -->
+      <div class="reveal reveal-delay-1 card-hover bg-white border border-slate-200 rounded-lg p-6 flex flex-col">
+        <div class="w-10 h-10 rounded bg-green-50 text-green-800 flex items-center justify-center mb-4">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
+          </svg>
+        </div>
+        <h3 class="font-bold text-slate-900 text-base mb-2">Safety</h3>
+        <p class="text-slate-600 text-xs leading-relaxed">
+          Safety is central to our culture. From cylinder pressure checks to storage separation and transport securing, zero compromise is our rule.
+        </p>
+      </div>
+
+      <!-- Value 3: Reliability -->
+      <div class="reveal reveal-delay-2 card-hover bg-white border border-slate-200 rounded-lg p-6 flex flex-col">
+        <div class="w-10 h-10 rounded bg-sky-50 text-sky-800 flex items-center justify-center mb-4">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
+          </svg>
+        </div>
+        <h3 class="font-bold text-slate-900 text-base mb-2">Reliability</h3>
+        <p class="text-slate-600 text-xs leading-relaxed">
+          We aim to provide dependable supply and logistics that our clients can rely on without fear of unexpected operational halts.
+        </p>
+      </div>
+
+      <!-- Value 4: Integrity -->
+      <div class="reveal reveal-delay-3 card-hover bg-white border border-slate-200 rounded-lg p-6 flex flex-col">
+        <div class="w-10 h-10 rounded bg-purple-50 text-purple-800 flex items-center justify-center mb-4">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3 6l3 1m0 0l-3 9a5.002 5.002 0 006.001 0M6 7l3 9M6 7l6-2m6 2l3-1m-3 1l-3 9a5.002 5.002 0 006.001 0M18 7l3 9m-3-9l-6-2m0-2v2m0 16V5m0 16H9m3 0h3"/>
+          </svg>
+        </div>
+        <h3 class="font-bold text-slate-900 text-base mb-2">Integrity</h3>
+        <p class="text-slate-600 text-xs leading-relaxed">
+          We build lasting client partnerships through honest pricing, clear commitments, and ethical business conduct in every engagement.
+        </p>
+      </div>
+
+      <!-- Value 5: Customer Commitment -->
+      <div class="reveal reveal-delay-4 card-hover bg-white border border-slate-200 rounded-lg p-6 flex flex-col">
+        <div class="w-10 h-10 rounded bg-amber-50 text-amber-800 flex items-center justify-center mb-4">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M14 10h4.764a2 2 0 011.789 2.894l-3.5 7A2 2 0 0115.263 21h-4.017c-.163 0-.326-.02-.485-.06L7 20m7-10V5a2 2 0 00-2-2h-.095c-.5 0-.905.405-.905.905 0 .714-.211 1.412-.608 2.006L7 11v9m7-10h-2M7 20H5a2 2 0 01-2-2v-6a2 2 0 012-2h2.5"/>
+          </svg>
+        </div>
+        <h3 class="font-bold text-slate-900 text-base mb-2">Customer Commitment</h3>
+        <p class="text-slate-600 text-xs leading-relaxed">
+          We take the time to understand each customer's specific operational needs and provide responsive, tailored solutions.
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+
+<!--
+  ═══════════════════════════════════════════════════════════
+  10. VISION & MISSION
+  ═══════════════════════════════════════════════════════════
+-->
+<section class="py-20 lg:py-28 bg-white">
+  <div class="max-w-screen-xl mx-auto px-5 sm:px-8">
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12">
+
+      <!-- Vision Card -->
+      <div class="reveal rounded-xl bg-gradient-to-br from-[#040d1e] to-[#0f2044] p-8 sm:p-10 text-white border border-white/10 shadow-lg relative overflow-hidden">
+        <div class="absolute -right-8 -bottom-8 w-40 h-40 rounded-full bg-blue-600/10 pointer-events-none"></div>
+        <div class="w-12 h-12 rounded-lg bg-white/10 flex items-center justify-center mb-6 text-sky-400">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/>
+            <path stroke-linecap="round" stroke-linejoin="round" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"/>
+          </svg>
+        </div>
+        <span class="text-xs uppercase tracking-widest text-sky-400 font-bold">Strategic Direction</span>
+        <h3 class="text-2xl font-bold text-white mt-1 mb-4">Our Vision</h3>
+        <p class="text-slate-300 text-sm leading-relaxed mb-4">
+          [Company Vision Statement: To be recognized as the most dependable and safety-focused provider of industrial and medical gas solutions in our region, advancing industrial productivity and healthcare reliability through uncompromising standards.]
+        </p>
+        <p class="text-xs text-slate-400 italic">
+          (Replace with official company vision statement once finalized)
+        </p>
+      </div>
+
+      <!-- Mission Card -->
+      <div class="reveal reveal-delay-1 rounded-xl bg-slate-50 border border-slate-200 p-8 sm:p-10 text-slate-900 shadow-sm relative overflow-hidden">
+        <div class="w-12 h-12 rounded-lg bg-blue-100 text-blue-900 flex items-center justify-center mb-6">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+          </svg>
+        </div>
+        <span class="text-xs uppercase tracking-widest text-blue-800 font-bold">Operational Purpose</span>
+        <h3 class="text-2xl font-bold text-slate-900 mt-1 mb-4">Our Mission</h3>
+        <p class="text-slate-600 text-sm leading-relaxed mb-4">
+          [Company Mission Statement: To support commercial industry and critical healthcare institutions by safely delivering high-quality gases on time, backed by rigorous cylinder inspection, transparent communication, and genuine dedication to customer success.]
+        </p>
+        <p class="text-xs text-slate-400 italic">
+          (Replace with official company mission statement once finalized)
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+
+
+
+
+<!--
+  ═══════════════════════════════════════════════════════════
+  12. OUR COMMITMENT
+  ═══════════════════════════════════════════════════════════
+-->
+<section class="py-20 lg:py-28 bg-white">
+  <div class="max-w-screen-xl mx-auto px-5 sm:px-8">
+    <div class="max-w-3xl mx-auto text-center">
+
+      <span class="section-label reveal">Our Promise</span>
+      <h2 class="reveal reveal-delay-1 text-3xl sm:text-[2.25rem] font-extrabold text-slate-900 leading-tight mb-4">
+        Committed to a Safer, More Reliable Future
+      </h2>
+      <div class="h-accent mx-auto mb-6"></div>
+
+      <p class="reveal reveal-delay-2 text-slate-600 text-sm sm:text-base leading-relaxed mb-10">
+        At GB Industrial &amp; Medical Gases, we believe that consistent supply and unwavering safety are the foundation of any enduring industrial partnership. We continuously evaluate our cylinder handling procedures, refine logistics routes, and invest in our personnel to guarantee that every delivery meets the highest standards of safety and compliance.
+      </p>
+
+      <!-- Commitment Highlights Grid -->
+      <div class="reveal reveal-delay-3 grid grid-cols-1 sm:grid-cols-3 gap-6 text-left">
+        <div class="p-5 rounded-lg border border-slate-200 bg-slate-50">
+          <div class="w-8 h-8 rounded bg-blue-100 flex items-center justify-center text-blue-800 font-bold text-sm mb-3">1</div>
+          <h4 class="font-bold text-slate-900 text-sm mb-1">Safe Handling</h4>
+          <p class="text-slate-500 text-xs leading-relaxed">Systematic cylinder inspection, leak tests, and compliant transport securing on every shipment.</p>
+        </div>
+
+        <div class="p-5 rounded-lg border border-slate-200 bg-slate-50">
+          <div class="w-8 h-8 rounded bg-blue-100 flex items-center justify-center text-blue-800 font-bold text-sm mb-3">2</div>
+          <h4 class="font-bold text-slate-900 text-sm mb-1">Dependable Delivery</h4>
+          <p class="text-slate-500 text-xs leading-relaxed">Scheduled replacement cycles and responsive emergency provisions to eliminate operational delays.</p>
+        </div>
+
+        <div class="p-5 rounded-lg border border-slate-200 bg-slate-50">
+          <div class="w-8 h-8 rounded bg-blue-100 flex items-center justify-center text-blue-800 font-bold text-sm mb-3">3</div>
+          <h4 class="font-bold text-slate-900 text-sm mb-1">Transparent Partnership</h4>
+          <p class="text-slate-500 text-xs leading-relaxed">Direct accountability, clear supply agreements, and responsive support whenever you need assistance.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!--
+  ═══════════════════════════════════════════════════════════
+  13. CALL TO ACTION
+  ═══════════════════════════════════════════════════════════
+-->
+<section class="cta-section py-20 lg:py-24 relative overflow-hidden">
+  <div class="absolute inset-0 grid-pattern pointer-events-none opacity-60"></div>
+  <div class="absolute right-0 top-0 w-[440px] h-[440px] rounded-full bg-white/[0.03] -translate-y-1/3 translate-x-1/4 pointer-events-none"></div>
+
+  <div class="relative z-10 max-w-3xl mx-auto px-5 sm:px-8 text-center">
+    <h2 class="reveal text-3xl sm:text-4xl lg:text-[2.6rem] font-extrabold text-white leading-tight mb-5">
+      Let's Build a Reliable Partnership
+    </h2>
+    <p class="reveal reveal-delay-1 text-blue-200 text-[1.0625rem] leading-relaxed mb-10 max-w-xl mx-auto">
+      Whether you need industrial or medical gas solutions, our team is ready to understand your requirements.
+    </p>
+    <div class="reveal reveal-delay-2 flex flex-col sm:flex-row gap-3 justify-center">
+      <a href="./products.html"
+         class="inline-flex items-center justify-center gap-2 bg-white text-blue-900 font-semibold text-[0.9375rem] px-7 py-3 rounded-[3px] border-2 border-white hover:bg-blue-50 transition-all duration-200 hover:-translate-y-0.5 hover:shadow-lg">
+        Explore Our Products
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+        </svg>
+      </a>
+      <a href="./contact.html" class="btn-outline-white px-7 py-3 text-[0.9375rem] justify-center">
+        Contact Us
+      </a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+
+<!--
+  ═══════════════════════════════════════════════════════════
+  14. FOOTER
+  ═══════════════════════════════════════════════════════════
+-->
+<footer class="site-footer text-slate-400">
+
+  <!-- Main footer -->
+  <div class="max-w-screen-xl mx-auto px-5 sm:px-8 py-14 lg:py-16">
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-10">
+
+      <!-- Brand -->
+      <div class="lg:col-span-2">
+        <a href="../index.html" class="inline-flex items-center gap-3 mb-4 group">
+          <div class="bg-white rounded-xl flex items-center justify-center flex-shrink-0 transition-transform duration-200 group-hover:scale-105" style="width:56px;height:56px;padding:6px;">
+            <img
+              src="../assets/icons/logo.png"
+              alt="GB Industrial & Medical Gases logo"
+              class="w-full h-full object-contain"
+            />
+          </div>
+          <div class="flex flex-col leading-none">
+            <span class="text-white font-extrabold text-base tracking-tight leading-tight">GB Industrial</span>
+            <span class="text-slate-400 text-[0.6875rem] font-medium leading-tight mt-0.5">&amp; Medical Gases</span>
+            <span class="text-slate-500 text-[0.6rem] uppercase tracking-[0.1em] mt-1">Pure Gases | Safer Tomorrows</span>
+          </div>
+        </a>
+        <p class="text-sm text-slate-500 leading-relaxed max-w-xs">
+          Reliable industrial and medical gas solutions focused on quality, safety, and dependable service.
+        </p>
+      </div>
+
+      <!-- Quick Links -->
+      <div>
+        <h4 class="text-white text-xs font-bold uppercase tracking-wider mb-4">Quick Links</h4>
+        <ul class="space-y-2.5">
+          <li><a href="../index.html"        class="text-sm text-slate-400 hover:text-white transition-colors">Home</a></li>
+          <li><a href="./about.html"         class="text-sm text-sky-400 font-medium">About</a></li>
+          <li><a href="./products.html"      class="text-sm text-slate-400 hover:text-white transition-colors">Products</a></li>
+          <li><a href="./contact.html"       class="text-sm text-slate-400 hover:text-white transition-colors">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Products -->
+      <div>
+        <h4 class="text-white text-xs font-bold uppercase tracking-wider mb-4">Products</h4>
+        <ul class="space-y-2.5">
+          <li><a href="./products.html#industrial" class="text-sm text-slate-400 hover:text-white transition-colors">Industrial Gases</a></li>
+          <li><a href="./products.html#medical"    class="text-sm text-slate-400 hover:text-white transition-colors">Medical Gases</a></li>
+          <li><a href="./products.html#specialty"  class="text-sm text-slate-400 hover:text-white transition-colors">Specialty Gases</a></li>
+          <li><a href="./products.html"            class="text-sm text-slate-400 hover:text-white transition-colors">All Products</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact -->
+      <div>
+        <h4 class="text-white text-xs font-bold uppercase tracking-wider mb-3">Contact</h4>
+        <ul class="space-y-2">
+          <li><a href="tel:+917013535335" class="text-sm text-slate-400 hover:text-white transition-colors">+91 70135 35335</a></li>
+          <li><a href="mailto:naveenkumarp851@gmail.com" class="text-sm text-slate-400 hover:text-white transition-colors">naveenkumarp851@gmail.com</a></li>
+          <li><a href="https://maps.app.goo.gl/8XbHUZYxTrieEhjKA" target="_blank" rel="noopener noreferrer" class="text-sm text-slate-400 hover:text-white transition-colors">View on Google Maps ↗</a></li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Bottom bar -->
+  <div class="border-t border-white/[0.05]">
+    <div class="max-w-screen-xl mx-auto px-5 sm:px-8 py-5 flex flex-col sm:flex-row items-center justify-between gap-3">
+      <p class="text-xs text-slate-500">&copy; 2026 GB Industrial &amp; Medical Gases. All Rights Reserved.</p>
+      <div class="flex items-center gap-5">
+        <a href="#" class="text-xs text-slate-500 hover:text-slate-300 transition-colors">Privacy Policy</a>
+        <a href="#" class="text-xs text-slate-500 hover:text-slate-300 transition-colors">Terms &amp; Conditions</a>
+      </div>
+    </div>
+  </div>
+
+</footer>
+
+<!-- WhatsApp floating button -->
+<a href="https://wa.me/917013535335" target="_blank" rel="noopener noreferrer"
+   class="wa-float" aria-label="Chat on WhatsApp" title="Chat on WhatsApp">
+  <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+  </svg>
+</a>
+
+<script src="../js/main.js" type="module"></script>
+</body>
+</html>

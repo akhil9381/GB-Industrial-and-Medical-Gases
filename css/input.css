@@ -1,0 +1,246 @@
+@import "tailwindcss";
+
+@source "../index.html";
+@source "../pages/**/*.html";
+@source "../js/**/*.js";
+@source "../components/**/*.html";
+
+@theme {
+  --font-sans: "Inter", "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
+}
+
+/* ── Smooth scroll ────────────────────────────────────────── */
+html { scroll-behavior: smooth; }
+
+/* ── Custom scrollbar ─────────────────────────────────────── */
+::-webkit-scrollbar { width: 5px; }
+::-webkit-scrollbar-track { background: #f1f5f9; }
+::-webkit-scrollbar-thumb { background: #1e3a8a; border-radius: 3px; }
+
+/* ── Scroll-triggered fade-up ─────────────────────────────── */
+.reveal {
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+.reveal.in-view { opacity: 1; transform: translateY(0); }
+.reveal-delay-1 { transition-delay: 80ms; }
+.reveal-delay-2 { transition-delay: 160ms; }
+.reveal-delay-3 { transition-delay: 240ms; }
+.reveal-delay-4 { transition-delay: 320ms; }
+.reveal-delay-5 { transition-delay: 400ms; }
+.reveal-delay-6 { transition-delay: 480ms; }
+
+/* ── Navbar ───────────────────────────────────────────────── */
+#site-nav {
+  transition: background 0.3s ease, box-shadow 0.3s ease, padding 0.3s ease;
+}
+#site-nav.nav-scrolled {
+  background: rgba(4, 13, 30, 0.97) !important;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 2px 16px rgba(0,0,0,0.28);
+}
+.nav-link {
+  position: relative;
+  font-size: 0.8125rem;
+  font-weight: 500;
+  color: rgba(255,255,255,0.7);
+  transition: color 0.2s;
+  padding: 0.25rem 0;
+  white-space: nowrap;
+}
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 1.5px;
+  background: #38bdf8;
+  transition: width 0.25s ease;
+}
+.nav-link:hover { color: #fff; }
+.nav-link:hover::after { width: 100%; }
+
+/* ── Mobile menu ──────────────────────────────────────────── */
+#mobile-nav {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s cubic-bezier(0.4,0,0.2,1), opacity 0.3s ease;
+  opacity: 0;
+}
+#mobile-nav.open { max-height: 600px; opacity: 1; }
+
+/* ── Buttons ──────────────────────────────────────────────── */
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.625rem;
+  background: #1e3a8a;
+  color: #fff;
+  font-size: 0.875rem;
+  font-weight: 600;
+  border-radius: 3px;
+  border: 2px solid #1e3a8a;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background 0.22s ease, transform 0.18s ease, box-shadow 0.22s ease;
+}
+.btn-primary:hover {
+  background: #152b5e;
+  border-color: #152b5e;
+  transform: translateY(-1px);
+  box-shadow: 0 6px 20px rgba(30,58,138,0.35);
+}
+.btn-outline-white {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.625rem;
+  background: transparent;
+  color: #fff;
+  font-size: 0.875rem;
+  font-weight: 600;
+  border-radius: 3px;
+  border: 2px solid rgba(255,255,255,0.5);
+  text-decoration: none;
+  cursor: pointer;
+  transition: background 0.22s ease, border-color 0.22s ease, transform 0.18s ease;
+}
+.btn-outline-white:hover {
+  background: rgba(255,255,255,0.1);
+  border-color: #fff;
+  transform: translateY(-1px);
+}
+.btn-ghost-dark {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.7rem 1.5rem;
+  background: transparent;
+  color: #1e3a8a;
+  font-size: 0.875rem;
+  font-weight: 600;
+  border-radius: 3px;
+  border: 2px solid #1e3a8a;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background 0.22s ease, color 0.22s ease, transform 0.18s ease;
+}
+.btn-ghost-dark:hover {
+  background: #1e3a8a;
+  color: #fff;
+  transform: translateY(-1px);
+}
+
+/* ── Section label ────────────────────────────────────────── */
+.section-label {
+  display: inline-block;
+  font-size: 0.6875rem;
+  font-weight: 700;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+  color: #1e3a8a;
+  padding: 0.2rem 0.75rem;
+  background: #eff6ff;
+  border-radius: 999px;
+  border: 1px solid #bfdbfe;
+  margin-bottom: 0.875rem;
+}
+.section-label-light {
+  display: inline-block;
+  font-size: 0.6875rem;
+  font-weight: 700;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+  color: #93c5fd;
+  padding: 0.2rem 0.75rem;
+  background: rgba(147,197,253,0.08);
+  border-radius: 999px;
+  border: 1px solid rgba(147,197,253,0.2);
+  margin-bottom: 0.875rem;
+}
+
+/* ── Divider accent ───────────────────────────────────────── */
+.h-accent {
+  width: 40px;
+  height: 3px;
+  background: #1e3a8a;
+  border-radius: 2px;
+  margin-bottom: 1.25rem;
+}
+
+/* ── Card hover ───────────────────────────────────────────── */
+.card-hover {
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+}
+.card-hover:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 14px 36px rgba(14,30,80,0.11);
+  border-color: #93c5fd !important;
+}
+
+/* ── Image zoom ───────────────────────────────────────────── */
+.img-zoom { overflow: hidden; }
+.img-zoom img { transition: transform 0.5s ease; }
+.img-zoom:hover img { transform: scale(1.04); }
+
+/* ── Trust strip items ────────────────────────────────────── */
+.trust-item {
+  transition: background 0.22s ease;
+}
+.trust-item:hover { background: #f0f7ff; }
+
+/* ── Why card dark hover ──────────────────────────────────── */
+.why-card {
+  border: 1px solid rgba(255,255,255,0.06);
+  transition: background 0.25s ease, border-color 0.25s ease, transform 0.25s ease;
+}
+.why-card:hover {
+  background: rgba(255,255,255,0.05);
+  border-color: rgba(147,197,253,0.2);
+  transform: translateY(-3px);
+}
+
+/* ── Link arrow ───────────────────────────────────────────── */
+.link-arrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.375rem;
+  font-size: 0.8125rem;
+  font-weight: 600;
+  color: #1e3a8a;
+  text-decoration: none;
+  transition: gap 0.2s ease, color 0.2s ease;
+}
+.link-arrow:hover { color: #1d4ed8; gap: 0.625rem; }
+
+/* ── WhatsApp float ───────────────────────────────────────── */
+.wa-float {
+  position: fixed;
+  bottom: 1.75rem;
+  right: 1.75rem;
+  z-index: 900;
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background: #22c55e;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 6px 24px rgba(34,197,94,0.42);
+  transition: transform 0.22s ease, box-shadow 0.22s ease;
+}
+.wa-float:hover {
+  transform: scale(1.1);
+  box-shadow: 0 10px 32px rgba(34,197,94,0.52);
+}
+
+/* ── Grid overlay subtle pattern ──────────────────────────── */
+.grid-pattern {
+  background-image:
+    linear-gradient(rgba(255,255,255,0.025) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,0.025) 1px, transparent 1px);
+  background-size: 44px 44px;
+}

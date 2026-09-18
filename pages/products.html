@@ -1,0 +1,551 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/png" href="../assets/icons/logo.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Explore products from GB Industrial & Medical Gases — Industrial gases, medical gases, specialty gases, and cylinder supply solutions." />
+  <title>Products | GB Industrial &amp; Medical Gases</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="../css/input.css" />
+
+  <style>
+    body { font-family: 'Inter', 'Plus Jakarta Sans', sans-serif; }
+    h1, h2, h3, h4, h5 { font-family: 'Plus Jakarta Sans', 'Inter', sans-serif; }
+
+    .hero-bg {
+      background: #040d1e;
+      position: relative;
+    }
+    .hero-bg::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background:
+        radial-gradient(ellipse 60% 70% at 75% 45%, rgba(30,58,138,0.32) 0%, transparent 70%),
+        radial-gradient(ellipse 40% 50% at 20% 80%, rgba(6,182,212,0.08) 0%, transparent 60%);
+      pointer-events: none;
+    }
+
+    .cta-section {
+      background: linear-gradient(100deg, #0f2044 0%, #1e3a8a 60%, #1d4ed8 100%);
+    }
+
+    .site-footer { background: #030b18; }
+  </style>
+</head>
+
+<body class="bg-white text-slate-800 antialiased">
+
+<!--
+  ═══════════════════════════════════════════════════════════
+  1. NAVBAR
+  ═══════════════════════════════════════════════════════════
+-->
+<header id="site-nav" class="fixed top-0 inset-x-0 z-50 bg-[#040d1e]">
+  <div class="max-w-screen-xl mx-auto px-5 sm:px-8">
+
+    <!-- Desktop row -->
+    <div class="flex items-center justify-between h-[66px]">
+
+      <!-- Logo -->
+      <a href="../index.html" class="flex-shrink-0 group flex items-center gap-3" aria-label="GB Industrial & Medical Gases — Home">
+        <div class="bg-white rounded-lg p-1 flex items-center justify-center flex-shrink-0 transition-transform duration-200 group-hover:scale-105" style="width:44px;height:44px;">
+          <img
+            src="../assets/icons/logo.png"
+            alt="GB Industrial & Medical Gases logo"
+            class="w-full h-full object-contain"
+          />
+        </div>
+        <div class="flex flex-col leading-none hidden sm:flex">
+          <span class="text-white font-extrabold text-[0.9375rem] tracking-tight leading-none">GB Industrial</span>
+          <span class="text-slate-400 text-[0.625rem] font-semibold uppercase tracking-[0.12em] mt-0.5 leading-none">&amp; Medical Gases</span>
+        </div>
+      </a>
+
+      <!-- Desktop nav links -->
+      <nav class="hidden lg:flex items-center gap-7 xl:gap-8" aria-label="Primary navigation">
+        <a href="../index.html" class="nav-link">Home</a>
+        <a href="./about.html" class="nav-link">About</a>
+        <a href="./products.html" class="nav-link text-white font-semibold after:!w-full after:!bg-sky-400">Products</a>
+        <a href="./contact.html" class="nav-link">Contact</a>
+      </nav>
+
+      <!-- Right: CTA + hamburger -->
+      <div class="flex items-center gap-3">
+        <a href="./contact.html" class="hidden md:inline-flex btn-primary py-2 px-4 text-xs">
+          Request a Quote
+        </a>
+        <button
+          id="nav-toggler"
+          class="lg:hidden w-9 h-9 flex items-center justify-center rounded text-slate-300 hover:text-white hover:bg-white/10 transition-colors"
+          aria-label="Open navigation"
+          aria-expanded="false"
+          aria-controls="mobile-nav">
+          <svg id="icon-open" class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/>
+          </svg>
+          <svg id="icon-close" class="w-5 h-5 hidden" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile menu -->
+    <div id="mobile-nav" class="lg:hidden border-t border-white/10">
+      <nav class="py-3 flex flex-col gap-0.5" aria-label="Mobile navigation">
+        <a href="../index.html"    class="px-3 py-2.5 text-sm font-medium text-slate-300 hover:text-white hover:bg-white/[0.05] rounded transition-colors">Home</a>
+        <a href="./about.html"     class="px-3 py-2.5 text-sm font-medium text-slate-300 hover:text-white hover:bg-white/[0.05] rounded transition-colors">About</a>
+        <a href="./products.html"  class="px-3 py-2.5 text-sm font-semibold text-white bg-white/[0.08] rounded">Products</a>
+        <a href="./contact.html"   class="px-3 py-2.5 text-sm font-medium text-slate-300 hover:text-white hover:bg-white/[0.05] rounded transition-colors">Contact</a>
+        <div class="pt-2 pb-1">
+          <a href="./contact.html" class="btn-primary w-full justify-center text-sm py-2.5">Request a Quote</a>
+        </div>
+      </nav>
+    </div>
+
+  </div>
+</header>
+
+<main>
+
+<!--
+  ═══════════════════════════════════════════════════════════
+  2. PRODUCTS HERO
+  ═══════════════════════════════════════════════════════════
+-->
+<section class="hero-bg pt-[110px] pb-16 lg:pb-20 overflow-hidden border-b border-white/10">
+  <div class="absolute inset-0 grid-pattern opacity-100 pointer-events-none"></div>
+
+  <div class="relative z-10 max-w-screen-xl mx-auto px-5 sm:px-8">
+    <div class="max-w-3xl">
+
+      <!-- Breadcrumb -->
+      <nav class="reveal flex items-center gap-2 text-xs font-medium text-slate-400 mb-6" aria-label="Breadcrumb">
+        <a href="../index.html" class="hover:text-sky-300 transition-colors">Home</a>
+        <span class="text-slate-600">/</span>
+        <span class="text-sky-400 font-semibold">Products</span>
+      </nav>
+
+      <!-- Label -->
+      <div class="reveal reveal-delay-1 mb-4">
+        <span class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full border border-sky-500/25 bg-sky-500/[0.07] text-sky-300 text-[0.7rem] font-bold uppercase tracking-[0.14em]">
+          <span class="w-1.5 h-1.5 rounded-full bg-sky-400 animate-pulse"></span>
+          Comprehensive Gas Catalog
+        </span>
+      </div>
+
+      <!-- Heading -->
+      <h1 class="reveal reveal-delay-2 text-3xl sm:text-5xl lg:text-[3.25rem] font-extrabold text-white leading-[1.12] tracking-tight mb-6">
+        Industrial &amp; Medical<br/>Gas Solutions
+      </h1>
+
+      <!-- Supporting text -->
+      <p class="reveal reveal-delay-3 text-base sm:text-lg text-slate-300 leading-relaxed max-w-2xl">
+        Certified gases, cylinders, and supply solutions formulated to deliver consistent purity, safety, and operational reliability for industry and healthcare.
+      </p>
+
+    </div>
+  </div>
+</section>
+
+
+<!--
+  ═══════════════════════════════════════════════════════════
+  3. CATEGORY NAVIGATION ANCHORS
+  ═══════════════════════════════════════════════════════════
+-->
+<section class="border-b border-slate-200 bg-slate-50 sticky top-[66px] z-40">
+  <div class="max-w-screen-xl mx-auto px-5 sm:px-8 py-3 flex items-center gap-3 sm:gap-6 overflow-x-auto text-xs sm:text-sm font-semibold whitespace-nowrap">
+    <span class="text-slate-400 uppercase tracking-wider text-[0.7rem]">Categories:</span>
+    <a href="#industrial" class="text-blue-900 hover:text-blue-700 transition-colors px-3 py-1 rounded bg-white border border-slate-200 shadow-sm">Industrial Gases</a>
+    <a href="#medical" class="text-blue-900 hover:text-blue-700 transition-colors px-3 py-1 rounded bg-white border border-slate-200 shadow-sm">Medical Gases</a>
+    <a href="#specialty" class="text-blue-900 hover:text-blue-700 transition-colors px-3 py-1 rounded bg-white border border-slate-200 shadow-sm">Specialty Gases</a>
+    <a href="#cylinders" class="text-blue-900 hover:text-blue-700 transition-colors px-3 py-1 rounded bg-white border border-slate-200 shadow-sm">Cylinders &amp; Equipment</a>
+  </div>
+</section>
+
+
+<!--
+  ═══════════════════════════════════════════════════════════
+  4. INDUSTRIAL GASES SECTION
+  ═══════════════════════════════════════════════════════════
+-->
+<section id="industrial" class="py-20 lg:py-24 bg-white scroll-mt-24">
+  <div class="max-w-screen-xl mx-auto px-5 sm:px-8">
+
+    <div class="max-w-2xl mb-12">
+      <span class="section-label">Section 01</span>
+      <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 leading-tight">
+        Industrial Gases
+      </h2>
+      <p class="text-slate-500 text-sm mt-2 leading-relaxed">
+        High-purity industrial gases engineered for cutting, welding, fabrication, manufacturing processes, and metallurgy.
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+      <!-- Product Card: Industrial Oxygen -->
+      <div class="reveal card-hover border border-slate-200 rounded-lg p-6 flex flex-col bg-slate-50/50">
+        <div class="w-10 h-10 rounded bg-blue-100 text-blue-900 flex items-center justify-center font-bold text-sm mb-4">O₂</div>
+        <h3 class="font-bold text-slate-900 text-lg mb-1">Industrial Oxygen</h3>
+        <div class="text-xs font-semibold text-blue-800 uppercase tracking-wider mb-3">Cutting &bull; Welding &bull; Metallurgy</div>
+        <p class="text-slate-600 text-xs leading-relaxed flex-1 mb-5">
+          Essential for oxy-fuel cutting, brazing, fabrication processes, and combustion enhancement in industrial furnaces.
+        </p>
+        <a href="./contact.html" class="btn-primary justify-center text-xs py-2">
+          Request Quote for Oxygen
+        </a>
+      </div>
+
+      <!-- Product Card: Industrial Nitrogen -->
+      <div class="reveal reveal-delay-1 card-hover border border-slate-200 rounded-lg p-6 flex flex-col bg-slate-50/50">
+        <div class="w-10 h-10 rounded bg-sky-100 text-sky-900 flex items-center justify-center font-bold text-sm mb-4">N₂</div>
+        <h3 class="font-bold text-slate-900 text-lg mb-1">Industrial Nitrogen</h3>
+        <div class="text-xs font-semibold text-sky-800 uppercase tracking-wider mb-3">Purging &bull; Blanketing &bull; Laser Cutting</div>
+        <p class="text-slate-600 text-xs leading-relaxed flex-1 mb-5">
+          Inert gas solution used for pipeline purging, tank blanketing, laser cutting assist gas, and chemical protection.
+        </p>
+        <a href="./contact.html" class="btn-primary justify-center text-xs py-2">
+          Request Quote for Nitrogen
+        </a>
+      </div>
+
+      <!-- Product Card: Argon -->
+      <div class="reveal reveal-delay-2 card-hover border border-slate-200 rounded-lg p-6 flex flex-col bg-slate-50/50">
+        <div class="w-10 h-10 rounded bg-indigo-100 text-indigo-900 flex items-center justify-center font-bold text-sm mb-4">Ar</div>
+        <h3 class="font-bold text-slate-900 text-lg mb-1">Argon Gas</h3>
+        <div class="text-xs font-semibold text-indigo-800 uppercase tracking-wider mb-3">TIG / MIG Shielding &bull; Metal Joining</div>
+        <p class="text-slate-600 text-xs leading-relaxed flex-1 mb-5">
+          Premium shielding gas preventing oxidation during TIG and MIG welding of aluminum, stainless steel, and specialty alloys.
+        </p>
+        <a href="./contact.html" class="btn-primary justify-center text-xs py-2">
+          Request Quote for Argon
+        </a>
+      </div>
+
+      <!-- Product Card: Carbon Dioxide -->
+      <div class="reveal card-hover border border-slate-200 rounded-lg p-6 flex flex-col bg-slate-50/50">
+        <div class="w-10 h-10 rounded bg-slate-200 text-slate-800 flex items-center justify-center font-bold text-sm mb-4">CO₂</div>
+        <h3 class="font-bold text-slate-900 text-lg mb-1">Carbon Dioxide</h3>
+        <div class="text-xs font-semibold text-slate-700 uppercase tracking-wider mb-3">MIG Welding &bull; Foundry &bull; Industrial</div>
+        <p class="text-slate-600 text-xs leading-relaxed flex-1 mb-5">
+          Widely utilized in MIG/MAG welding processes, fire suppression systems, foundry mold washing, and cooling.
+        </p>
+        <a href="./contact.html" class="btn-primary justify-center text-xs py-2">
+          Request Quote for CO₂
+        </a>
+      </div>
+
+      <!-- Product Card: Dissolved Acetylene -->
+      <div class="reveal reveal-delay-1 card-hover border border-slate-200 rounded-lg p-6 flex flex-col bg-slate-50/50">
+        <div class="w-10 h-10 rounded bg-red-100 text-red-900 flex items-center justify-center font-bold text-sm mb-4">DA</div>
+        <h3 class="font-bold text-slate-900 text-lg mb-1">Dissolved Acetylene (DA)</h3>
+        <div class="text-xs font-semibold text-red-800 uppercase tracking-wider mb-3">Oxy-Acetylene Cutting &bull; High Heat</div>
+        <p class="text-slate-600 text-xs leading-relaxed flex-1 mb-5">
+          High-temperature fuel gas delivering supreme flame efficiency for heavy metal cutting and metal preparation.
+        </p>
+        <a href="./contact.html" class="btn-primary justify-center text-xs py-2">
+          Request Quote for Acetylene
+        </a>
+      </div>
+
+      <!-- Product Card: Industrial Gas Mixtures -->
+      <div class="reveal reveal-delay-2 card-hover border border-slate-200 rounded-lg p-6 flex flex-col bg-slate-50/50">
+        <div class="w-10 h-10 rounded bg-amber-100 text-amber-900 flex items-center justify-center font-bold text-sm mb-4">MIX</div>
+        <h3 class="font-bold text-slate-900 text-lg mb-1">Custom Welding Mixtures</h3>
+        <div class="text-xs font-semibold text-amber-800 uppercase tracking-wider mb-3">Argon+CO₂ &bull; Precise Ratios</div>
+        <p class="text-slate-600 text-xs leading-relaxed flex-1 mb-5">
+          Custom blended argon-CO₂ shielding mixtures designed to reduce spatter, optimize bead appearance, and increase welding speeds.
+        </p>
+        <a href="./contact.html" class="btn-primary justify-center text-xs py-2">
+          Request Quote for Gas Mixes
+        </a>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+
+<!--
+  ═══════════════════════════════════════════════════════════
+  5. MEDICAL GASES SECTION
+  ═══════════════════════════════════════════════════════════
+-->
+<section id="medical" class="py-20 lg:py-24 bg-[#f8fafc] border-t border-slate-200 scroll-mt-24">
+  <div class="max-w-screen-xl mx-auto px-5 sm:px-8">
+
+    <div class="max-w-2xl mb-12">
+      <span class="section-label">Section 02</span>
+      <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 leading-tight">
+        Medical Gases &amp; Healthcare Solutions
+      </h2>
+      <p class="text-slate-500 text-sm mt-2 leading-relaxed">
+        Certified medical-grade gas supply supporting hospitals, emergency rooms, surgical centers, clinics, and ambulance networks.
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+      <!-- Medical Oxygen -->
+      <div class="reveal card-hover bg-white border border-slate-200 rounded-lg p-6 flex flex-col">
+        <div class="w-12 h-12 rounded-lg bg-red-50 text-red-700 flex items-center justify-center mb-4">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/>
+          </svg>
+        </div>
+        <h3 class="font-bold text-slate-900 text-lg mb-1">Medical Oxygen (IP)</h3>
+        <div class="text-xs font-semibold text-red-700 uppercase tracking-wider mb-3">Respiratory Therapy &bull; Critical Care</div>
+        <p class="text-slate-600 text-xs leading-relaxed flex-1 mb-5">
+          Certified medical oxygen filled under pharmacopeia safety guidelines, available in emergency transport and bulk manifold cylinders.
+        </p>
+        <a href="./contact.html" class="btn-primary justify-center text-xs py-2">
+          Request Medical Oxygen Quote
+        </a>
+      </div>
+
+      <!-- Nitrous Oxide -->
+      <div class="reveal reveal-delay-1 card-hover bg-white border border-slate-200 rounded-lg p-6 flex flex-col">
+        <div class="w-12 h-12 rounded-lg bg-blue-50 text-blue-900 flex items-center justify-center mb-4">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"/>
+          </svg>
+        </div>
+        <h3 class="font-bold text-slate-900 text-lg mb-1">Medical Nitrous Oxide</h3>
+        <div class="text-xs font-semibold text-blue-800 uppercase tracking-wider mb-3">Anesthesia &bull; Surgical Suites</div>
+        <p class="text-slate-600 text-xs leading-relaxed flex-1 mb-5">
+          High-purity anesthetic grade gas for hospital operating theaters, dental surgeries, and clinical pain management.
+        </p>
+        <a href="./contact.html" class="btn-primary justify-center text-xs py-2">
+          Request Nitrous Oxide Quote
+        </a>
+      </div>
+
+      <!-- Medical Air -->
+      <div class="reveal reveal-delay-2 card-hover bg-white border border-slate-200 rounded-lg p-6 flex flex-col">
+        <div class="w-12 h-12 rounded-lg bg-teal-50 text-teal-800 flex items-center justify-center mb-4">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+          </svg>
+        </div>
+        <h3 class="font-bold text-slate-900 text-lg mb-1">Medical Air &amp; CO₂</h3>
+        <div class="text-xs font-semibold text-teal-800 uppercase tracking-wider mb-3">Ventilation &bull; Insufflation</div>
+        <p class="text-slate-600 text-xs leading-relaxed flex-1 mb-5">
+          Clean, oil-free, dry medical air for patient ventilation and high-grade carbon dioxide for minimally invasive surgeries.
+        </p>
+        <a href="./contact.html" class="btn-primary justify-center text-xs py-2">
+          Request Healthcare Gas Quote
+        </a>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+
+<!--
+  ═══════════════════════════════════════════════════════════
+  6. SPECIALTY & CYLINDER EQUIPMENT
+  ═══════════════════════════════════════════════════════════
+-->
+<section id="specialty" class="py-20 lg:py-24 bg-white border-t border-slate-200 scroll-mt-24">
+  <div class="max-w-screen-xl mx-auto px-5 sm:px-8">
+
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+
+      <!-- Left: Specialty Gases -->
+      <div class="reveal">
+        <span class="section-label">Section 03</span>
+        <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 leading-tight mb-4">
+          Specialty &amp; Laboratory Gases
+        </h2>
+        <div class="h-accent"></div>
+        <p class="text-slate-600 text-sm leading-relaxed mb-6">
+          We supply ultra-high-purity gases (up to 99.999%), calibration standards, laser-cutting assist gases, and precise gas mixtures for research laboratories, quality testing, and precision engineering.
+        </p>
+
+        <ul class="space-y-3 text-sm text-slate-700">
+          <li class="flex items-center gap-3">
+            <span class="w-1.5 h-1.5 rounded-full bg-blue-800"></span>
+            <span>Ultra High Purity (UHP) Nitrogen &amp; Argon</span>
+          </li>
+          <li class="flex items-center gap-3">
+            <span class="w-1.5 h-1.5 rounded-full bg-blue-800"></span>
+            <span>Laser Cutting Assist Gases &amp; Optics Protection</span>
+          </li>
+          <li class="flex items-center gap-3">
+            <span class="w-1.5 h-1.5 rounded-full bg-blue-800"></span>
+            <span>Spectrometry &amp; Gas Chromatography Standards</span>
+          </li>
+        </ul>
+
+        <div class="mt-8">
+          <a href="./contact.html" class="btn-primary py-2.5 px-5 text-xs">
+            Inquire for Specialty Specifications
+          </a>
+        </div>
+      </div>
+
+      <!-- Right: Cylinders & Supply Management -->
+      <div id="cylinders" class="reveal reveal-delay-1 bg-slate-50 border border-slate-200 rounded-xl p-8 scroll-mt-24">
+        <span class="text-xs uppercase tracking-widest text-slate-400 font-bold">Equipment &amp; Hardware</span>
+        <h3 class="text-xl font-bold text-slate-900 mt-1 mb-3">Cylinder Testing &amp; Management</h3>
+        <p class="text-slate-600 text-xs leading-relaxed mb-6">
+          We maintain rigorous cylinder testing, valve replacements, hydrostatic pressure testing, and manifold logistics so your facility operates with complete safety.
+        </p>
+
+        <div class="space-y-3">
+          <div class="p-3.5 bg-white rounded border border-slate-200 text-xs">
+            <strong class="text-slate-900 block mb-0.5">High-Pressure Seamless Cylinders</strong>
+            <span class="text-slate-500">Available in standard capacities (10L, 47L, 50L) with compliant color coding.</span>
+          </div>
+
+          <div class="p-3.5 bg-white rounded border border-slate-200 text-xs">
+            <strong class="text-slate-900 block mb-0.5">Scheduled Delivery &amp; Refill Swap</strong>
+            <span class="text-slate-500">Scheduled door-to-door cylinder exchange to prevent factory or clinical downtime.</span>
+          </div>
+        </div>
+
+        <a href="./contact.html" class="link-arrow text-xs mt-6 inline-flex">
+          Contact Our Supply Logistics Desk &rarr;
+        </a>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+
+<!--
+  ═══════════════════════════════════════════════════════════
+  7. CALL TO ACTION
+  ═══════════════════════════════════════════════════════════
+-->
+<section class="cta-section py-20 lg:py-24 relative overflow-hidden text-white">
+  <div class="absolute inset-0 grid-pattern pointer-events-none opacity-60"></div>
+  <div class="relative z-10 max-w-3xl mx-auto px-5 sm:px-8 text-center">
+    <h2 class="reveal text-3xl sm:text-4xl font-extrabold mb-4">
+      Ready to Order or Need a Custom Quote?
+    </h2>
+    <p class="reveal reveal-delay-1 text-blue-200 text-base leading-relaxed mb-8 max-w-xl mx-auto">
+      Tell us your gas requirements, volume expectations, and delivery address. Our team will prepare a competitive, transparent quotation.
+    </p>
+    <div class="reveal reveal-delay-2 flex flex-col sm:flex-row gap-3 justify-center">
+      <a href="./contact.html" class="inline-flex items-center justify-center gap-2 bg-white text-blue-900 font-semibold text-sm px-7 py-3 rounded hover:bg-blue-50 transition-colors">
+        Request a Quote Now
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+        </svg>
+      </a>
+      <a href="tel:+917013535335" class="btn-outline-white px-7 py-3 text-sm justify-center">
+        Call +91 70135 35335
+      </a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+
+<!--
+  ═══════════════════════════════════════════════════════════
+  8. FOOTER
+  ═══════════════════════════════════════════════════════════
+-->
+<footer class="site-footer text-slate-400">
+
+  <!-- Main footer -->
+  <div class="max-w-screen-xl mx-auto px-5 sm:px-8 py-14 lg:py-16">
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-10">
+
+      <!-- Brand -->
+      <div class="lg:col-span-2">
+        <a href="../index.html" class="inline-flex items-center gap-3 mb-4 group">
+          <div class="bg-white rounded-xl flex items-center justify-center flex-shrink-0 transition-transform duration-200 group-hover:scale-105" style="width:56px;height:56px;padding:6px;">
+            <img
+              src="../assets/icons/logo.png"
+              alt="GB Industrial & Medical Gases logo"
+              class="w-full h-full object-contain"
+            />
+          </div>
+          <div class="flex flex-col leading-none">
+            <span class="text-white font-extrabold text-base tracking-tight leading-tight">GB Industrial</span>
+            <span class="text-slate-400 text-[0.6875rem] font-medium leading-tight mt-0.5">&amp; Medical Gases</span>
+            <span class="text-slate-500 text-[0.6rem] uppercase tracking-[0.1em] mt-1">Pure Gases | Safer Tomorrows</span>
+          </div>
+        </a>
+        <p class="text-sm text-slate-500 leading-relaxed max-w-xs">
+          Reliable industrial and medical gas solutions focused on quality, safety, and dependable service.
+        </p>
+      </div>
+
+      <!-- Quick Links -->
+      <div>
+        <h4 class="text-white text-xs font-bold uppercase tracking-wider mb-4">Quick Links</h4>
+        <ul class="space-y-2.5">
+          <li><a href="../index.html"        class="text-sm text-slate-400 hover:text-white transition-colors">Home</a></li>
+          <li><a href="./about.html"         class="text-sm text-slate-400 hover:text-white transition-colors">About</a></li>
+          <li><a href="./products.html"      class="text-sm text-sky-400 font-medium">Products</a></li>
+          <li><a href="./contact.html"       class="text-sm text-slate-400 hover:text-white transition-colors">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Products -->
+      <div>
+        <h4 class="text-white text-xs font-bold uppercase tracking-wider mb-4">Products</h4>
+        <ul class="space-y-2.5">
+          <li><a href="./products.html#industrial" class="text-sm text-slate-400 hover:text-white transition-colors">Industrial Gases</a></li>
+          <li><a href="./products.html#medical"    class="text-sm text-slate-400 hover:text-white transition-colors">Medical Gases</a></li>
+          <li><a href="./products.html#specialty"  class="text-sm text-slate-400 hover:text-white transition-colors">Specialty Gases</a></li>
+          <li><a href="./products.html"            class="text-sm text-slate-400 hover:text-white transition-colors">All Products</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact -->
+      <div>
+        <h4 class="text-white text-xs font-bold uppercase tracking-wider mb-3">Contact</h4>
+        <ul class="space-y-2">
+          <li><a href="tel:+917013535335" class="text-sm text-slate-400 hover:text-white transition-colors">+91 70135 35335</a></li>
+          <li><a href="mailto:naveenkumarp851@gmail.com" class="text-sm text-slate-400 hover:text-white transition-colors">naveenkumarp851@gmail.com</a></li>
+          <li><a href="https://maps.app.goo.gl/8XbHUZYxTrieEhjKA" target="_blank" rel="noopener noreferrer" class="text-sm text-slate-400 hover:text-white transition-colors">View on Google Maps ↗</a></li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Bottom bar -->
+  <div class="border-t border-white/[0.05]">
+    <div class="max-w-screen-xl mx-auto px-5 sm:px-8 py-5 flex flex-col sm:flex-row items-center justify-between gap-3">
+      <p class="text-xs text-slate-500">&copy; 2026 GB Industrial &amp; Medical Gases. All Rights Reserved.</p>
+      <div class="flex items-center gap-5">
+        <a href="#" class="text-xs text-slate-500 hover:text-slate-300 transition-colors">Privacy Policy</a>
+        <a href="#" class="text-xs text-slate-500 hover:text-slate-300 transition-colors">Terms &amp; Conditions</a>
+      </div>
+    </div>
+  </div>
+
+</footer>
+
+<!-- WhatsApp floating button -->
+<a href="https://wa.me/917013535335" target="_blank" rel="noopener noreferrer"
+   class="wa-float" aria-label="Chat on WhatsApp" title="Chat on WhatsApp">
+  <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+  </svg>
+</a>
+
+<script src="../js/main.js" type="module"></script>
+</body>
+</html>

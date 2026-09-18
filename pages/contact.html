@@ -1,0 +1,449 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/png" href="../assets/icons/logo.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Contact GB Industrial & Medical Gases — Request a quote for industrial, medical, and specialty gases, cylinder refills, or delivery arrangements." />
+  <title>Contact Us &amp; Request a Quote | GB Industrial &amp; Medical Gases</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="../css/input.css" />
+
+  <style>
+    body { font-family: 'Inter', 'Plus Jakarta Sans', sans-serif; }
+    h1, h2, h3, h4, h5 { font-family: 'Plus Jakarta Sans', 'Inter', sans-serif; }
+
+    .hero-bg {
+      background: #040d1e;
+      position: relative;
+    }
+    .hero-bg::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background:
+        radial-gradient(ellipse 60% 70% at 75% 45%, rgba(30,58,138,0.32) 0%, transparent 70%),
+        radial-gradient(ellipse 40% 50% at 20% 80%, rgba(6,182,212,0.08) 0%, transparent 60%);
+      pointer-events: none;
+    }
+
+    .form-input {
+      width: 100%;
+      border: 1px solid #cbd5e1;
+      border-radius: 4px;
+      padding: 0.65rem 0.875rem;
+      font-size: 0.875rem;
+      color: #0f172a;
+      background: #ffffff;
+      transition: border-color 0.2s, box-shadow 0.2s;
+      outline: none;
+    }
+    .form-input:focus {
+      border-color: #1e3a8a;
+      box-shadow: 0 0 0 3px rgba(30, 58, 138, 0.12);
+    }
+
+    .site-footer { background: #030b18; }
+  </style>
+</head>
+
+<body class="bg-white text-slate-800 antialiased">
+
+<!--
+  ═══════════════════════════════════════════════════════════
+  1. NAVBAR
+  ═══════════════════════════════════════════════════════════
+-->
+<header id="site-nav" class="fixed top-0 inset-x-0 z-50 bg-[#040d1e]">
+  <div class="max-w-screen-xl mx-auto px-5 sm:px-8">
+
+    <!-- Desktop row -->
+    <div class="flex items-center justify-between h-[66px]">
+
+      <!-- Logo -->
+      <a href="../index.html" class="flex-shrink-0 group flex items-center gap-3" aria-label="GB Industrial & Medical Gases — Home">
+        <div class="bg-white rounded-lg p-1 flex items-center justify-center flex-shrink-0 transition-transform duration-200 group-hover:scale-105" style="width:44px;height:44px;">
+          <img
+            src="../assets/icons/logo.png"
+            alt="GB Industrial & Medical Gases logo"
+            class="w-full h-full object-contain"
+          />
+        </div>
+        <div class="flex flex-col leading-none hidden sm:flex">
+          <span class="text-white font-extrabold text-[0.9375rem] tracking-tight leading-none">GB Industrial</span>
+          <span class="text-slate-400 text-[0.625rem] font-semibold uppercase tracking-[0.12em] mt-0.5 leading-none">&amp; Medical Gases</span>
+        </div>
+      </a>
+
+      <!-- Desktop nav links -->
+      <nav class="hidden lg:flex items-center gap-7 xl:gap-8" aria-label="Primary navigation">
+        <a href="../index.html" class="nav-link">Home</a>
+        <a href="./about.html" class="nav-link">About</a>
+        <a href="./products.html" class="nav-link">Products</a>
+        <a href="./contact.html" class="nav-link text-white font-semibold after:!w-full after:!bg-sky-400">Contact</a>
+      </nav>
+
+      <!-- Right: CTA + hamburger -->
+      <div class="flex items-center gap-3">
+        <a href="./contact.html" class="hidden md:inline-flex btn-primary py-2 px-4 text-xs">
+          Request a Quote
+        </a>
+        <button
+          id="nav-toggler"
+          class="lg:hidden w-9 h-9 flex items-center justify-center rounded text-slate-300 hover:text-white hover:bg-white/10 transition-colors"
+          aria-label="Open navigation"
+          aria-expanded="false"
+          aria-controls="mobile-nav">
+          <svg id="icon-open" class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/>
+          </svg>
+          <svg id="icon-close" class="w-5 h-5 hidden" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile menu -->
+    <div id="mobile-nav" class="lg:hidden border-t border-white/10">
+      <nav class="py-3 flex flex-col gap-0.5" aria-label="Mobile navigation">
+        <a href="../index.html"    class="px-3 py-2.5 text-sm font-medium text-slate-300 hover:text-white hover:bg-white/[0.05] rounded transition-colors">Home</a>
+        <a href="./about.html"     class="px-3 py-2.5 text-sm font-medium text-slate-300 hover:text-white hover:bg-white/[0.05] rounded transition-colors">About</a>
+        <a href="./products.html"  class="px-3 py-2.5 text-sm font-medium text-slate-300 hover:text-white hover:bg-white/[0.05] rounded transition-colors">Products</a>
+        <a href="./contact.html"   class="px-3 py-2.5 text-sm font-semibold text-white bg-white/[0.08] rounded">Contact</a>
+        <div class="pt-2 pb-1">
+          <a href="./contact.html" class="btn-primary w-full justify-center text-sm py-2.5">Request a Quote</a>
+        </div>
+      </nav>
+    </div>
+
+  </div>
+</header>
+
+<main>
+
+<!--
+  ═══════════════════════════════════════════════════════════
+  2. CONTACT HERO
+  ═══════════════════════════════════════════════════════════
+-->
+<section class="hero-bg pt-[110px] pb-16 lg:pb-20 overflow-hidden border-b border-white/10">
+  <div class="absolute inset-0 grid-pattern opacity-100 pointer-events-none"></div>
+
+  <div class="relative z-10 max-w-screen-xl mx-auto px-5 sm:px-8">
+    <div class="max-w-3xl">
+
+      <!-- Breadcrumb -->
+      <nav class="reveal flex items-center gap-2 text-xs font-medium text-slate-400 mb-6" aria-label="Breadcrumb">
+        <a href="../index.html" class="hover:text-sky-300 transition-colors">Home</a>
+        <span class="text-slate-600">/</span>
+        <span class="text-sky-400 font-semibold">Contact &amp; Quote</span>
+      </nav>
+
+      <!-- Label -->
+      <div class="reveal reveal-delay-1 mb-4">
+        <span class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full border border-sky-500/25 bg-sky-500/[0.07] text-sky-300 text-[0.7rem] font-bold uppercase tracking-[0.14em]">
+          <span class="w-1.5 h-1.5 rounded-full bg-sky-400 animate-pulse"></span>
+          Direct Communication &amp; Quotes
+        </span>
+      </div>
+
+      <!-- Heading -->
+      <h1 class="reveal reveal-delay-2 text-3xl sm:text-5xl lg:text-[3.25rem] font-extrabold text-white leading-[1.12] tracking-tight mb-6">
+        Contact Our Team &amp;<br/>Request a Quote
+      </h1>
+
+      <!-- Supporting text -->
+      <p class="reveal reveal-delay-3 text-base sm:text-lg text-slate-300 leading-relaxed max-w-2xl">
+        Connect directly with GB Industrial &amp; Medical Gases for pricing, cylinder orders, delivery scheduling, or tailored business supply agreements.
+      </p>
+
+    </div>
+  </div>
+</section>
+
+
+<!--
+  ═══════════════════════════════════════════════════════════
+  3. CONTACT DETAILS & QUOTE FORM
+  ═══════════════════════════════════════════════════════════
+-->
+<section class="py-20 lg:py-28 bg-[#f8fafc]">
+  <div class="max-w-screen-xl mx-auto px-5 sm:px-8">
+
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16">
+
+      <!-- Left Column: Direct Contact Info (5 Cols) -->
+      <div class="reveal lg:col-span-5 space-y-8">
+
+        <div>
+          <span class="section-label">Get in Touch</span>
+          <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 leading-tight mb-3">
+            We Are Ready to Assist You
+          </h2>
+          <div class="h-accent"></div>
+          <p class="text-slate-600 text-sm leading-relaxed">
+            Whether you manage an industrial manufacturing plant or a critical medical center, our team provides swift responses, transparent quotes, and dependable supply.
+          </p>
+        </div>
+
+        <!-- Contact Cards -->
+        <div class="space-y-4">
+
+          <!-- Phone -->
+          <div class="bg-white border border-slate-200 rounded-lg p-5 flex items-start gap-4 shadow-sm">
+            <div class="w-11 h-11 rounded-lg bg-blue-50 text-blue-900 flex items-center justify-center flex-shrink-0">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
+              </svg>
+            </div>
+            <div>
+              <div class="text-[0.6875rem] font-bold uppercase tracking-wider text-slate-400">Direct Phone</div>
+              <a href="tel:+917013535335" class="text-base font-bold text-slate-900 hover:text-blue-800 transition-colors mt-0.5 block">
+                +91 70135 35335
+              </a>
+              <div class="text-xs text-slate-500 mt-0.5">Calls &amp; Urgent Inquiries</div>
+            </div>
+          </div>
+
+          <!-- Email -->
+          <div class="bg-white border border-slate-200 rounded-lg p-5 flex items-start gap-4 shadow-sm">
+            <div class="w-11 h-11 rounded-lg bg-blue-50 text-blue-900 flex items-center justify-center flex-shrink-0">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+              </svg>
+            </div>
+            <div>
+              <div class="text-[0.6875rem] font-bold uppercase tracking-wider text-slate-400">Email Address</div>
+              <a href="mailto:naveenkumarp851@gmail.com" class="text-base font-bold text-slate-900 hover:text-blue-800 transition-colors mt-0.5 block break-all">
+                naveenkumarp851@gmail.com
+              </a>
+              <div class="text-xs text-slate-500 mt-0.5">Formal Quotations &amp; RFQs</div>
+            </div>
+          </div>
+
+          <!-- Location -->
+          <div class="bg-white border border-slate-200 rounded-lg p-5 flex items-start gap-4 shadow-sm">
+            <div class="w-11 h-11 rounded-lg bg-blue-50 text-blue-900 flex items-center justify-center flex-shrink-0">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+                <path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+              </svg>
+            </div>
+            <div>
+              <div class="text-[0.6875rem] font-bold uppercase tracking-wider text-slate-400">Facility Location</div>
+              <a href="https://maps.app.goo.gl/8XbHUZYxTrieEhjKA" target="_blank" rel="noopener noreferrer" class="text-base font-bold text-blue-800 hover:text-blue-900 transition-colors mt-0.5 flex items-center gap-1.5">
+                View on Google Maps ↗
+              </a>
+              <div class="text-xs text-slate-500 mt-0.5">Refill Depot &amp; Operations Center</div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- WhatsApp Quick Connect -->
+        <div class="p-5 rounded-lg bg-green-50 border border-green-200 flex items-center justify-between gap-4">
+          <div class="flex items-center gap-3">
+            <div class="w-10 h-10 rounded-full bg-green-500 text-white flex items-center justify-center flex-shrink-0">
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+              </svg>
+            </div>
+            <div>
+              <div class="text-sm font-bold text-slate-900">Need Immediate WhatsApp Assistance?</div>
+              <div class="text-xs text-slate-500">Quick inquiries &amp; order updates</div>
+            </div>
+          </div>
+          <a href="https://wa.me/917013535335" target="_blank" rel="noopener noreferrer" class="px-4 py-2 bg-green-600 hover:bg-green-700 text-white text-xs font-bold rounded transition-colors whitespace-nowrap">
+            Chat Now
+          </a>
+        </div>
+
+      </div>
+
+      <!-- Right Column: Request a Quote Form (7 Cols) -->
+      <div class="reveal reveal-delay-2 lg:col-span-7 bg-white border border-slate-200 rounded-xl p-7 sm:p-10 shadow-sm">
+        <h3 class="text-2xl font-bold text-slate-900 mb-1">Request a Quote / Send an Inquiry</h3>
+        <p class="text-slate-500 text-xs sm:text-sm mb-6">
+          Fill in your details below and our team will get back to you with pricing and delivery information.
+        </p>
+
+        <!-- Success notification container -->
+        <div id="form-success" class="hidden p-5 rounded-lg bg-green-50 border border-green-200 text-green-800 text-sm mb-6 text-center">
+          <svg class="w-10 h-10 text-green-600 mx-auto mb-2" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+          </svg>
+          <div class="font-bold text-base mb-1">Thank You! Your Inquiry Has Been Sent.</div>
+          <p class="text-xs text-green-700">Our sales and supply team will contact you shortly.</p>
+        </div>
+
+        <!-- Form -->
+        <form id="enquiry-form" class="space-y-4">
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div>
+              <label class="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-1">Your Name *</label>
+              <input type="text" name="name" required placeholder="e.g. John Doe" class="form-input" />
+            </div>
+
+            <div>
+              <label class="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-1">Company / Facility Name</label>
+              <input type="text" name="company" placeholder="e.g. Acme Fabrications" class="form-input" />
+            </div>
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div>
+              <label class="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-1">Phone Number *</label>
+              <input type="tel" name="phone" required placeholder="e.g. +91 98765 43210" class="form-input" />
+            </div>
+
+            <div>
+              <label class="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-1">Email Address *</label>
+              <input type="email" name="email" required placeholder="name@company.com" class="form-input" />
+            </div>
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div>
+              <label class="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-1">Gas Category Needed *</label>
+              <select name="gas_category" required class="form-input">
+                <option value="">Select a category...</option>
+                <option value="Industrial Gases">Industrial Gases (Oxygen, Nitrogen, Argon, etc.)</option>
+                <option value="Medical Gases">Medical Gases (Medical Oxygen, etc.)</option>
+                <option value="Specialty Gases">Specialty &amp; High-Purity Gases</option>
+                <option value="Cylinder Testing & Handling">Cylinder Supply &amp; Testing</option>
+                <option value="Other Requirements">Other / Bulk Supply</option>
+              </select>
+            </div>
+
+            <div>
+              <label class="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-1">Estimated Cylinders / Volume</label>
+              <input type="text" name="quantity" placeholder="e.g. 10 cylinders / regular supply" class="form-input" />
+            </div>
+          </div>
+
+          <div>
+            <label class="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-1">Delivery Location &amp; Requirements</label>
+            <textarea name="message" rows="4" placeholder="Specify cylinder specifications, refill frequency, or site location details..." class="form-input"></textarea>
+          </div>
+
+          <div>
+            <button id="form-submit" type="submit" class="btn-primary w-full justify-center py-3 text-sm font-bold">
+              Submit Quote Request
+            </button>
+          </div>
+
+          <p class="text-[0.7rem] text-slate-400 text-center mt-2">
+            🔒 Your contact information is kept strictly confidential and only used for your quotation.
+          </p>
+
+        </form>
+
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+</main>
+
+
+<!--
+  ═══════════════════════════════════════════════════════════
+  4. FOOTER
+  ═══════════════════════════════════════════════════════════
+-->
+<footer class="site-footer text-slate-400">
+
+  <!-- Main footer -->
+  <div class="max-w-screen-xl mx-auto px-5 sm:px-8 py-14 lg:py-16">
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-10">
+
+      <!-- Brand -->
+      <div class="lg:col-span-2">
+        <a href="../index.html" class="inline-flex items-center gap-3 mb-4 group">
+          <div class="bg-white rounded-xl flex items-center justify-center flex-shrink-0 transition-transform duration-200 group-hover:scale-105" style="width:56px;height:56px;padding:6px;">
+            <img
+              src="../assets/icons/logo.png"
+              alt="GB Industrial & Medical Gases logo"
+              class="w-full h-full object-contain"
+            />
+          </div>
+          <div class="flex flex-col leading-none">
+            <span class="text-white font-extrabold text-base tracking-tight leading-tight">GB Industrial</span>
+            <span class="text-slate-400 text-[0.6875rem] font-medium leading-tight mt-0.5">&amp; Medical Gases</span>
+            <span class="text-slate-500 text-[0.6rem] uppercase tracking-[0.1em] mt-1">Pure Gases | Safer Tomorrows</span>
+          </div>
+        </a>
+        <p class="text-sm text-slate-500 leading-relaxed max-w-xs">
+          Reliable industrial and medical gas solutions focused on quality, safety, and dependable service.
+        </p>
+      </div>
+
+      <!-- Quick Links -->
+      <div>
+        <h4 class="text-white text-xs font-bold uppercase tracking-wider mb-4">Quick Links</h4>
+        <ul class="space-y-2.5">
+          <li><a href="../index.html"        class="text-sm text-slate-400 hover:text-white transition-colors">Home</a></li>
+          <li><a href="./about.html"         class="text-sm text-slate-400 hover:text-white transition-colors">About</a></li>
+          <li><a href="./products.html"      class="text-sm text-slate-400 hover:text-white transition-colors">Products</a></li>
+          <li><a href="./contact.html"       class="text-sm text-sky-400 font-medium">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Products -->
+      <div>
+        <h4 class="text-white text-xs font-bold uppercase tracking-wider mb-4">Products</h4>
+        <ul class="space-y-2.5">
+          <li><a href="./products.html#industrial" class="text-sm text-slate-400 hover:text-white transition-colors">Industrial Gases</a></li>
+          <li><a href="./products.html#medical"    class="text-sm text-slate-400 hover:text-white transition-colors">Medical Gases</a></li>
+          <li><a href="./products.html#specialty"  class="text-sm text-slate-400 hover:text-white transition-colors">Specialty Gases</a></li>
+          <li><a href="./products.html"            class="text-sm text-slate-400 hover:text-white transition-colors">All Products</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact -->
+      <div>
+        <h4 class="text-white text-xs font-bold uppercase tracking-wider mb-3">Contact</h4>
+        <ul class="space-y-2">
+          <li><a href="tel:+917013535335" class="text-sm text-slate-400 hover:text-white transition-colors">+91 70135 35335</a></li>
+          <li><a href="mailto:naveenkumarp851@gmail.com" class="text-sm text-slate-400 hover:text-white transition-colors">naveenkumarp851@gmail.com</a></li>
+          <li><a href="https://maps.app.goo.gl/8XbHUZYxTrieEhjKA" target="_blank" rel="noopener noreferrer" class="text-sm text-slate-400 hover:text-white transition-colors">View on Google Maps ↗</a></li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Bottom bar -->
+  <div class="border-t border-white/[0.05]">
+    <div class="max-w-screen-xl mx-auto px-5 sm:px-8 py-5 flex flex-col sm:flex-row items-center justify-between gap-3">
+      <p class="text-xs text-slate-500">&copy; 2026 GB Industrial &amp; Medical Gases. All Rights Reserved.</p>
+      <div class="flex items-center gap-5">
+        <a href="#" class="text-xs text-slate-500 hover:text-slate-300 transition-colors">Privacy Policy</a>
+        <a href="#" class="text-xs text-slate-500 hover:text-slate-300 transition-colors">Terms &amp; Conditions</a>
+      </div>
+    </div>
+  </div>
+
+</footer>
+
+<!-- WhatsApp floating button -->
+<a href="https://wa.me/917013535335" target="_blank" rel="noopener noreferrer"
+   class="wa-float" aria-label="Chat on WhatsApp" title="Chat on WhatsApp">
+  <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+  </svg>
+</a>
+
+<script src="../js/main.js" type="module"></script>
+<script src="../js/contact.js" type="module"></script>
+</body>
+</html>
